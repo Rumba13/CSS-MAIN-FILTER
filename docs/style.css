@@ -1,0 +1,288 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+/*Крестик в IE*/
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+  .wrapper {
+    max-width: 992.98px;
+  }
+}
+@media (max-width: 880px) {
+  .wrapper {
+    max-width: 767.98px;
+  }
+}
+@media (max-width: 707px) {
+  .wrapper {
+    max-width: none;
+  }
+}
+img {
+  max-width: 100%;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template: 1fr 1fr 1fr 1fr/1fr 1fr 1fr;
+}
+
+div {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  border: 2px double #000;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-transition: all 0.1s linear 0s;
+  transition: all 0.1s linear 0s;
+}
+div:hover {
+  border: 4px double rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.filter1 {
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.filter1:hover {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+}
+
+.filter2 {
+  color: red;
+  -webkit-filter: brightness(0.3);
+          filter: brightness(0.3);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.filter2:hover {
+  -webkit-filter: brightness(1);
+          filter: brightness(1);
+}
+
+.filter3 {
+  color: red;
+  -webkit-filter: contrast(1%);
+          filter: contrast(1%);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.filter3:hover {
+  -webkit-filter: contrast(200%);
+          filter: contrast(200%);
+}
+
+.filter4 {
+  -webkit-filter: drop-shadow(1px 1px 5px red);
+          filter: drop-shadow(1px 1px 5px red);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.filter4:hover {
+  -webkit-filter: drop-shadow(1px 1px 10px red);
+          filter: drop-shadow(1px 1px 10px red);
+}
+
+.filter5 {
+  color: red;
+  background-color: blue;
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.filter5:hover {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.filter6 {
+  color: red;
+  background-color: blue;
+  -webkit-filter: hue-rotate(0deg);
+          filter: hue-rotate(0deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.filter6:hover {
+  -webkit-filter: hue-rotate(90deg);
+          filter: hue-rotate(90deg);
+}
+
+.filter7 {
+  color: red;
+  background-color: blue;
+  -webkit-filter: invert(0%);
+          filter: invert(0%);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.filter7:hover {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+.filter8 {
+  color: red;
+  background-color: blue;
+  -webkit-filter: opacity(0.4);
+          filter: opacity(0.4);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.filter8:hover {
+  -webkit-filter: opacity(1);
+          filter: opacity(1);
+}
+
+.filter9 {
+  color: red;
+  background-color: blue;
+  -webkit-filter: saturate(10%);
+          filter: saturate(10%);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.filter9:hover {
+  -webkit-filter: saturate(200%);
+          filter: saturate(200%);
+}
+
+.filter10 {
+  color: red;
+  background-color: blue;
+  -webkit-filter: sepia(100%);
+          filter: sepia(100%);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.filter10:hover {
+  -webkit-filter: sepia(20%);
+          filter: sepia(20%);
+}
+
+.filter11 {
+  color: red;
+  background-color: blue;
+  -webkit-filter: sepia(100%) invert(100%);
+          filter: sepia(100%) invert(100%);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.filter11:hover {
+  -webkit-filter: sepia(20%) invert(0%);
+          filter: sepia(20%) invert(0%);
+}
+
+@media (max-width: 990px) {
+  body {
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template: 1fr 1fr 1fr 1fr 1fr 1fr/1fr 1fr;
+  }
+}
+@media (max-width: 600px) {
+  body::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    content: "С компа зайди чмырь";
+  }
+}
